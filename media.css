@@ -116,6 +116,17 @@ footer p a:hover {
     P {
         font-size: 1.75em;
     }
-
     
+}
+
+@media (max-width: 480px) {
+    nav {
+      padding: 0.5em;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav li {
+      margin-bottom: 10px;
+    }
 }
