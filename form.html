@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Application Form - ALT SCHOOL</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="form.html">Application Form</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>AltSchool Application Form</h1>
+        <p>Fill the form below.</p>
+    </header>
+    
+    
+
+    <div class="container">
+        <div class="image-section">
+            <img src="Media/Altschool registration logo.png" alt="Image Description" class="centered-image">
+        </div>
+        <div class="form-section">
+            <form action="/submit_application" method="post">
+           
+             <p>
+              <label for="first_name">First Name:</label>
+              <input type="text" id="first_name" name="first_name" required> 
+        
+              <label for="last_name">Last Name:</label>
+              <input type="text" id="last_name" name="last_name" required>
+             </p>
+
+             <p>
+              <label for="gender">Gender:</label>
+              <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+             </select>
+            
+        
+             <label for="DOB">Date of Birth:</label>
+             <input type="date" id="DOB" name="DOB" required min="1934-01-01" max="2024-12-31">
+             </p>
+
+             <p>
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required>
+        
+             <label for="phone">Phone Number:</label>
+             <input type="tel" id="phone" name="phone" required>
+             </p>
+        
+             <p>
+              <label for="country">Country:</label>
+              <input type="text" id="country" name="country" required>
+        
+              <label for="residence">Stae/City of Residence:</label>
+              <input type="text" id="residence" name="residence" required>
+             </p>
+
+             <p>
+             <label for="about_us">How did you hear about us:</label>
+             <input type="text" id="about_us" name="about_us" required>
+             </p>
+
+             <p>
+             <label for="Password">Password:</label>
+             <input type="password" id="Password" name="Password" required>
+        
+             <label for="confirm_password"> Confirm Password:</label>
+             <input type="password" id="confirm_password" name="confirm_password" required>
+             </p>
+       
+             <p>By clicking continue, I agree to  Terms of Use and acknowledge that I have read the  Privacy Policy.</p>
+             <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
